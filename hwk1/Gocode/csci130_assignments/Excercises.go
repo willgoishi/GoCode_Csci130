@@ -43,3 +43,35 @@ func main(){
 	fmt.Println("Solution is:",solution)  //prints value in solution
 
 }
+//5
+func main(){
+
+	for x:=0; x<=100; x++{
+            if x%2 == 0 {
+		fmt.Println(x)
+	    }
+
+           }
+
+
+}
+
+//6
+
+func main(){
+
+	for x:=0; x<=100; x++{
+            if x%3 == 0 && x%5 == 0 {
+		fmt.Println("FizzBuzz")
+	    }else if x%3 == 0 {
+                fmt.Println("Fizz")
+            }else if x%5 == 0 {
+                fmt.Println("Buzz")
+            }else {
+                fmt.Println(x)
+            }
+
+           }
+
+
+}
