@@ -75,3 +75,28 @@ func main(){
 
 
 }
+//7
+func main(){
+
+	var sum int
+	for x:=0; x<1000; x++{
+            if x%3 == 0 || x%5 == 0 {
+		sum  = sum + x
+	    }
+           }
+        fmt.Println(sum)
+
+}
+
+//Part 2, 1
+func half(number int)(int ,bool){
+	return number/2, number%2 == 0
+}
+func main(){
+        var number int
+	fmt.Println("Enter a number:")
+	fmt.Scan(&number)
+	fmt.Println(half(number))
+
+}
+//Part 2, 2
