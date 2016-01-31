@@ -132,3 +132,15 @@ func main(){
 	fmt.Println( (true && false) || (false && true) || !(false && false))
 
 }
+//part 2, 5
+func foo(numbers ...int) {
+	fmt.Println(numbers)
+}
+func main() {
+	foo(1, 2)
+	foo(1, 2, 3)
+	aSlice := []int{1, 2, 3, 4}
+	foo(aSlice...)
+	foo()
+}
+//part 2, 6
