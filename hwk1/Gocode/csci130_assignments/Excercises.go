@@ -109,7 +109,21 @@ func main(){
 
 }
 //part2, 3
+func maximum(numbers ... int) int{
+    var largest_int int
+	for _,variables := range numbers{
+		if variables> largest_int{
+			largest_int = variables
+		}
+	}
+	return largest_int
+}
 
+func main(){
+
+	fmt.Println( maximum(24,324,452,34534,626,54))
+
+}
 
 //part 2,4    answer = true
 func main(){
