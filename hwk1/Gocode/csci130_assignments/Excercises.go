@@ -100,3 +100,21 @@ func main(){
 
 }
 //Part 2, 2
+func main(){
+
+        half := func(number int)(int, bool) {
+		return number / 2, number % 2 == 0
+	}
+	fmt.Println(half(45))
+
+}
+//part2, 3
+
+
+//part 2,4    answer = true
+func main(){
+
+
+	fmt.Println( (true && false) || (false && true) || !(false && false))
+
+}
