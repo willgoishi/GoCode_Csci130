@@ -144,3 +144,34 @@ func main() {
 	foo()
 }
 //part 2, 6
+
+/*Problem was to take a number and create a revolving pattern making a square format of numbers. Then add up the diagonals of numbers that make up the cross between those numbers.
+*/
+func main() {
+	var count int
+	var sum_of_diagonals int
+	count = 1001 * 1001
+
+	var spacer int
+        spacer = 1                              //init spacer to odd 1
+		//traverses 4 numbers so that you get the diagonal values (4 of them)
+		for i := 1; i < count; i ++ {         //traverses through the count size
+                        for k := 1; k<spacer; k = i {
+				for j := 0; j < 4; j++ {
+					if i % 2 != 0 {
+						//checks if the value is odd
+						sum_of_diagonals = sum_of_diagonals + i     //adds those values to the diagonal sum
+						fmt.Println(sum_of_diagonals)
+					}
+				}
+
+			}
+			spacer = spacer + 2//increments spacer so that each side is incremented by 2 (odd incrementation)
+			                   //skip 1 then 3 then 5 numbers
+
+		}
+                spacer = spacer + 2//increments spacer so that each side is incremented by 2 (odd incrementation)
+                           //skip 1 then 3 then 5 numbers
+
+	fmt.Println(sum_of_diagonals)
+}
